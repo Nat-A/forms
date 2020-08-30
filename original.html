@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find a roomie</title>
+    <link rel="stylesheet" href="original.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <form id="form1" action="get">
+            <!-- basic information -->
+            <label class="heading"> Basic Details</label> <br>
+
+            <label for="firstname">First Name</label> <br>
+            <input type="text" name="firstname" id="firstname" required><br>
+
+            <label for="lastname">Last Name</label> <br>
+            <input type="text" name="lastname" id="lastname" required> <br>
+
+            <label for="email">Email</label> <br>
+            <input type="email" name="email" id="email" required> <br>
+
+            <label for="number"> Phone Number</label> <br>
+            <input type="tel" name="number" id="number" required> <br>
+
+
+            <!-- end of basic details -->
+
+            <div class="btn-box">
+
+                <button type="button" id="next1">Next</button>
+
+            </div>
+
+        </form>
+
+        <form id="form2" action="" method="get">
+
+            <label class="heading">Essential Details</label> <br>
+
+            <label for="gender">Gender</label> <br>
+
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br>
+
+            <label for="level">Level</label> <br>
+
+            <select name="level" id="level" required>
+                    <option value="100">100</option>
+                    <option value="200">200</option>
+                    <option value="300">300</option>
+                    <option value="400">400</option>
+                    <option value="500">500</option>
+                    <option value="600">600</option>
+            </select><br>
+
+
+            <!-- choosing a hostel -->
+            <label for="hostel_option">Already have a hostel?</label> <br>
+
+            <select name=" hostel_option " id="hostel_option " required>
+                <option value="yes ">Yes</option>
+                <option value="no ">No</option>
+            </select><br>
+
+            <!-- end of choosing a hostel -->
+
+            <div class="btn-box">
+
+                <button type="button" id="previous1">Previous</button>
+                <button type="button" id="next2">Next</button>
+
+            </div>
+
+        </form>
+
+        <div class="step-row">
+
+            <div id="progress"></div>
+
+            <div class="step-col"> <small>Step 1</small> </div>
+            <div class="step-col"> <small>Step 2</small> </div>
+            <div class="step-col"> <small>Step 3</small> </div>
+
+        </div>
+
+        <!-- if Yes -->
+
+        <form id="form3" action="get">
+
+            <label class="heading"> Great, let's find you a roomie!</label> <br>
+
+            <label for="hostelname">Name of Hostel</label> <br>
+
+            <input type="text" name="hostelname" id="hostelname"> <br>
+
+            <label for="hostelfee">Hostel Fee</label> <br>
+            <input type="text" name="fee" id="fee"> <br>
+
+
+            <label for="location">Location</label> <br>
+            <select name="location" id="location">
+                <option value="Old Site">Old Site</option>
+                <option value="Science">Science</option>
+                <option value="Amamoma">Amamoma</option>
+                <option value="Ayensu">Ayensu</option>
+                <option value="Kwaprow">Kwaprow</option>
+                <option value="Kwasipra">Kwasi Pra</option>
+                <option value="Others">Others</option>
+            `</select><br>
+
+
+            <label for="roommate_number">Number of Roomates Needed</label><br>
+            <input type="number" name="roommate_number" id="roommate_number" min="1" max="3"> <br>
+
+
+            <div class="btn-box">
+
+                <button type="button" id="previous2">Previous</button>
+                <button type="submit" id="submit">Submit</button>
+
+            </div>
+
+        </form>
+
+        <!-- end of if Yes -->
+
+        <!-- if no -->
+        <form id="form4" action="get ">
+
+            <label class="heading">No? Lets Find You Find You A Roommie!</label> <br>
+
+            <label for="location">Preferred Location</label> <br>
+
+            <select name="location" id="location">
+                <option value="Old Site">Old Site</option>
+                <option value="Science">Science</option>
+                <option value="Amamoma">Amamoma</option>
+                <option value="Ayensu">Ayensu</option>
+                <option value="Kwaprow">Kwaprow</option>
+                <option value="Kwasipra">Kwasi Pra</option>
+                <option value="Others">Others</option>
+            `</select><br>
+
+
+            <label for="roommate_number">Number of Roomates Needed</label><br>
+            <input type="number" name="roommate_number" id="roommate_number" min="1" max="3"> <br>
+
+
+            <label for="budget">Your Budget</label><br>
+            <input type="text" name="budget" id="budget"> <br>
+
+            <!-- end of if no -->
+
+            <div class="btn-box">
+
+                <button type="button" id="previous2">Previous</button>
+                <button type="submit" id="submit">Submit</button>
+
+            </div>
+
+        </form>
+
+
+
+
+
+
+    </div>
+    <script src="original.js "></script>
+
+</body>
+
+</html>

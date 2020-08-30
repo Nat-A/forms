@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find a roomie</title>
+    <link rel="stylesheet" href="forms.css">
+    <!-- <script src="forms.js"></script> -->
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- <div class="step-row">
+
+            <div id="progress"></div>
+
+            <div class="step-col"> <small>Step 1</small> </div>
+            <div class="step-col"> <small>Step 2</small> </div>
+            <div class="step-col"> <small>Step 3</small> </div>
+
+        </div> -->
+
+        <div class="form-outer">
+            <form action="" method="get">
+
+                <div class="page slidepage">
+                    <div class="title">Basic Details</div>
+
+
+                    <div class="field">
+                        <div class="label">First Name</div>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Last Name</div>
+                        <input type="text" name="lastname" id="lastname">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Email </div>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Mobile</div>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+
+                    <div class="field nextBtn">
+                        <button class="next">Next</button>
+                    </div>
+
+                </div>
+
+                <div class="page slidepage">
+                    <div class="title">choosing</div>
+
+                    <!-- gender -->
+
+                    <div class="field">
+                        <div class="label">Gender</div>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <!-- end of gender -->
+
+                    <!-- level -->
+
+                    <div class="field">
+                        <div class="label">Level</div>
+                        <select name="level" id="level">
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="600">600</option>
+                    </select>
+                    </div>
+
+                    <!-- end of level -->
+
+                    <!-- choosing a hostel -->
+
+                    <div class="field">
+                        <div class="label">Already have a hostel?</div>
+                        <select name="hostel_option" id="hostel_option" required>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <!-- end of choosing a hostel -->
+
+
+                    <div class="field btns">
+                        <button class="prev-1 prev">Previous</button>
+                        <button class="next-1 next">Next</button>
+                    </div>
+
+                </div>
+
+                <div class="page page3">
+
+                    <div class="title">Great! Lets Pair You Up</div>
+
+                    <!-- name of hostel -->
+
+                    <div class="field">
+                        <div class="label">Name of Hostel</div>
+                        <input type="text " name="hostelname " id="hostelname ">
+                    </div>
+
+                    <!-- end of hostel name -->
+
+                    <!-- fees-->
+
+                    <div class="field">
+                        <div class="label">Hostel Fees</div>
+                        <input type="text " name="fee " id="fee">
+                    </div>
+
+                    <!-- end of fees -->
+
+                    <!-- location -->
+
+                    <div class="field">
+                        <div class="label">Location</div>
+                        <select name="location" id="location">
+                                <option value="Old Site ">Old Site</option>
+                                <option value="Science ">Science</option>
+                                <option value="Amamoma ">Amamoma</option>
+                                <option value="Ayensu ">Ayensu</option>
+                                <option value="Kwaprow ">Kwaprow</option>
+                                <option value="Kwasipra ">Kwasi Pra</option>
+                                <option value="Others ">Others</option>
+                         </select>
+                    </div>
+
+                    <!-- end of location -->
+
+                    <div class="field">
+                        <div class="label">Number of room mates needed</div>
+                        <input type="number" name="roommate_number " id="roommate_number " min="1" max="3">
+                    </div>
+
+
+
+                    <div class="field btns">
+                        <button class="prev-2 prev">Previous</button>
+                        <button class="next-2 next">Next</button>
+                    </div>
+
+                </div>
+
+                <div class="page page4">
+
+                    <div class="title">No Hostel? Lets Find You One.</div>
+
+                    <!-- location -->
+
+                    <div class="field">
+                        <div class="label">Preferred Location</div>
+                        <select name="location" id="location">
+                                <option value="Old Site ">Old Site</option>
+                                <option value="Science ">Science</option>
+                                <option value="Amamoma ">Amamoma</option>
+                                <option value="Ayensu ">Ayensu</option>
+                                <option value="Kwaprow ">Kwaprow</option>
+                                <option value="Kwasipra ">Kwasi Pra</option>
+                                <option value="Others ">Others</option>
+                        </select>
+                    </div>
+
+                    <!-- end of location -->
+
+                    <!-- number of room mates -->
+
+                    <div class="field">
+                        <div class="label">Number of room mates needed</div>
+                        <input type="number" name="roommate_number " id="roommate_number " min="1" max="3">
+                    </div>
+
+                    <!-- end of number of room mates -->
+
+                    <!-- budget -->
+
+                    <div class="field">
+                        <div class="label">Your budget</div>
+                        <input type="text" name="budget" id="budget">
+                    </div>
+
+                    <!-- end of budget -->
+
+                    <div class="field btns">
+                        <button class="prev-3 prev">Previous</button>
+                        <button class="submit">Submit</button>
+                    </div>
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+    <script src="forms.js"></script>
+</body>
+
+</html>

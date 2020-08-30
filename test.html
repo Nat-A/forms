@@ -1,0 +1,96 @@
+<label for="gender">Gender</label> <br>
+<select name="gender" id="gender" required>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+</select><br>
+
+
+
+<label for="level">Level</label> <br>
+
+<select name="level" id="level" required>
+    <option value="100">100</option>
+    <option value="200">200</option>
+    <option value="300">300</option>
+    <option value="400">400</option>
+    <option value="500">500</option>
+    <option value="600">600</option>
+</select><br>
+
+<label for="programme">Programme of Study</label> <br>
+
+<input type="text" name="programme" id="programme"> <br>
+
+
+
+<form action="get">
+    <!-- choosing a hostel -->
+    <label for="hostel_option">Already have a hostel?</label> <br>
+
+    <input type="radio" id="hostel_option" name="yes" value="Yes"> Yes
+    <input type="radio" id="hostel_option" name="No" value="No"> No
+
+    <!-- end of choosing a hostel -->
+</form>
+
+<!-- if Yes -->
+<form action="get">
+
+    <label for="hostelname">Name of Hostel</label> <br>
+
+    <input type="text" name="hostelname" id="hostelname"> <br>
+
+    <label for="hostelfee">Hostel Fee</label> <br>
+    <input type="text" name="fee" id="fee"> <br>
+
+
+    <label for="location">Location</label> <br>
+    <select name="location" id="location">
+        <option value="Old Site">Old Site</option>
+        <option value="Science">Science</option>
+        <option value="Amamoma">Amamoma</option>
+        <option value="Ayensu">Ayensu</option>
+        <option value="Kwaprow">Kwaprow</option>
+        <option value="Kwasipra">Kwasi Pra</option>
+        <option value="Others">Others</option>
+    </select><br>
+
+
+    <label for="roommate_number">Number of Roomates Needed</label><br>
+    <input type="number" name="roommate_number" id="roommate_number" min="1" max="3"> <br>
+
+</form>
+
+<!-- end of if Yes -->
+
+
+<!-- if no -->
+<form action="" method="get">
+    <label>No Hostel? Lets Find You One</label> <br>
+
+    <label for="location">Preferred Location</label> <br>
+    <select name="location" id="location">
+        <option value="Old Site">Old Site</option>
+        <option value="Science">Science</option>
+        <option value="Amamoma">Amamoma</option>
+        <option value="Ayensu">Ayensu</option>
+        <option value="Kwaprow">Kwaprow</option>
+        <option value="Kwasipra">Kwasi Pra</option>
+        <option value="Others">Others</option>
+    </select><br>
+
+    <label for="roommate_number">Number of Roomates Needed</label><br>
+    <input type="number" name="roommate_number" id="roommate_number" min="1" max="3"> <br>
+
+    <label for="hostelfee">Hostel Fee</label> <br>
+    <input type="range" name="hostelfee" id="hostelfee" oninput="showAmount(this.value)" min="1000" max="5000" step="5"> <br>
+    <span id="amount"></span>
+    <!-- <script>
+        function showAmount(newAmount) {
+
+            document.getElementById('amount').innerHTML = newAmount;
+        }
+    </script> -->
+
+</form>
+<!-- if no -->

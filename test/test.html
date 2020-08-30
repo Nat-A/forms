@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <form>
+
+                <div class="step step-1 active">
+                    <h3>Basic Info</h3>
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone-number">
+                    </div>
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+
+                <div class="step step-2">
+                    <h3>Essential Details</h3>
+                    <div class="form-group">
+                        <label for="firstName">Programme of Study</label>
+                        <input type="text" id="firstName" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="level">Level</label>
+                        <select name="level" id="level" required>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                            <option value="300">300</option>
+                            <option value="400">400</option>
+                            <option value="500">500</option>
+                            <option value="600">600</option>
+                    </select>
+                    </div>
+
+                    <!-- IMPORTANT -->
+                    <div class="form-group">
+                        <label for="hostel_option">Already have a hostel?</label>
+                        <input type="radio" name="type" id="yesBtn" class="yesBtn" value="yes" onclick="showHide()">Yes
+                        <input type="radio" name="type" id="noBtn" class="noBtn" value="No" onclick="showHide()">No
+                    </div>
+
+                    <button type="button" class="previous-btn">Prev</button>
+                    <button type="button" class="next-btn">Next</button>
+                </div>
+
+                <!-- END OF IMPORTANT -->
+
+                <!-- if yes -->
+                <div class="step step-3" id="show">
+                    <h3>Great, Lets You Pair Up!</h3>
+                    <div class="form-group">
+                        <label for="hostelname ">Name of Hostel</label>
+                        <input type="text" name="hostelname" id="hostelname">
+                    </div>
+                    <div class="form-group">
+                        <label for="location ">Location</label> <br>
+                        <select name="location " id="location ">
+                            <option value="Old Site ">Old Site</option>
+                            <option value="Science ">Science</option>
+                            <option value="Amamoma ">Amamoma</option>
+                            <option value="Ayensu ">Ayensu</option>
+                            <option value="Kwaprow ">Kwaprow</option>
+                            <option value="Kwasipra ">Kwasi Pra</option>
+                            <option value="Others ">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="hostelfee">Hostel Fee</label>
+                        <input type="text" name="fee" id="fee">
+                    </div>
+                    <div class="form-group">
+                        <label for="roommate_number ">Number of Roomates Needed</label><br>
+                        <input type="number" name="roommate_number" id="roommate_number" min="1" max="3">
+                    </div>
+
+                    <button type="button" class="previous-btn">Prev</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+                <!-- end of yes -->
+
+                <!-- if no -->
+                <div class="step step-4" id="hide">
+                    <h3>No? Lets Find You Find You A Roommie!</h3>
+                    <div class="form-group">
+                        <label for="location">Preferred Location</label> <br>
+                        <select name="location" id="location">
+                            <option value="Old Site">Old Site</option>
+                            <option value="Science">Science</option>
+                            <option value="Amamoma">Amamoma</option>
+                            <option value="Ayensu">Ayensu</option>
+                            <option value="Kwaprow">Kwaprow</option>
+                            <option value="Kwasipra">Kwasi Pra</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="roommate_number">Number of Roomates Needed</label>
+                        <input type="number" name="roommate_number" id="roommate_number" min="1" max="3">
+                    </div>
+                    <div class="form-group">
+                        <div class="label">Your budget</div>
+                        <input type="text" name="budget" id="budget">
+                    </div>
+                    <button type="button" class="previous-btn">Prev</button>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- <script>
+        function showHide() {
+
+
+
+            if (document.getElementsById('yesBtn').checked) {
+
+                document.getElementById('hide').style.display = "none";
+            }
+            //a
+            else {
+
+                document.getElementById('hide').style.display = "block";
+                // document.getElementById('show').style.display = "none";
+            }
+
+
+        }
+    </script> -->
+
+    <!-- <script>
+        function showHide() {
+            if (document.getElementById('yesBtn').checked) {
+
+                document.getElementById('hide').style.display = "none";
+            }
+            // a
+            else {
+
+                document.getElementById('show').style.display = "none";
+                // document.getElementById('hide').style.display = "block";
+
+            }
+        }
+    </script> -->
+
+
+    <script src="test.js"></script>
+</body>
+
+</html>
